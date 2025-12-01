@@ -7,68 +7,80 @@
     <link rel="shortcut icon" type="image/png" href="/img/Rakesh Karmaker Logo.png">
     <title>Rakesh Karmaker's Portfolio</title>
 
-
     <!-- Added Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!--Added  Bootstrap JS -->
+    <!--Added Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Added Our style.css file. -->
+    <!-- Added Our style.css file -->
     <link rel="stylesheet" href="../css/style.css">
     <!-- Font Awsome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- League Spartan - Google Fond added -->
+    <!-- League Spartan - Google Font added -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap" rel="stylesheet">
+    <style>
+        /* Styling the container to make it look like a monitor */
+        .monitor-container {
+            width: 100%;
+            max-width: 800px;
+            height: 450px;
+            background-color: #000;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            position: relative;
+            margin: auto;
+            overflow: hidden;
+        }
 
+        /* Styling the iframe to fit within the monitor */
+        .monitor-iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
 
 </head>
 
 <body>
 
-
     <!-- ## Nav Bar Section -->
-
     <nav class="navbar navbar-expand-lg navbar-dark navbar-container">
         <div class="container-fluid align-items-center">
             <a class="navbar-brand" href="#">Rakesh's Portfolio</a>
-
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav m-auto mb-2">
-
-                    <li class="nav-item ">
-                        <a class="nav-link " aria-current="page" href="../index.html">HOME</a>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="../pages/about-me.html">ABOUT ME</a>
+                        <a class="nav-link" aria-current="page" href="../pages/about-me.html">ABOUT ME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " aria-current="page"
+                        <a class="nav-link" aria-current="page"
                             href="../pages/achievement-certifications.html">ACHIEVEMENTS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="../pages/my-portfolio.html">PORTFOLIO</a>
+                        <a class="nav-link" aria-current="page" href="../pages/my-portfolio.html">PORTFOLIO</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="../index.html#education">EDUCATION</a>
+                        <a class="nav-link" aria-current="page" href="../index.html#education">EDUCATION</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="../index.html#skills">SKILLS</a>
+                        <a class="nav-link" aria-current="page" href="../index.html#skills">SKILLS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="../index.html#contact">CONTACT</a>
+                        <a class="nav-link" aria-current="page" href="../index.html#contact">CONTACT</a>
                     </li>
                 </ul>
-
             </div>
         </div>
     </nav>
@@ -77,161 +89,197 @@
     <!-- Page Title -->
     <div class="container pt-5 pd-2ss">
         <div class="position-relative d-flex align-items-center justify-content-center">
-            <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">PORTFOLIO
-            </h1>
+            <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">PORTFOLIO</h1>
             <h1 class="position-absolute text-uppercase text-primary">MY PORTFOLIO</h1>
         </div>
     </div>
     <!-- Page Title Ending -->
-    <!-- v2.01 adding portfolio -->
-    <!-- This is image sectioon -->
+
+    <!-- Portfolio Projects -->
     <div class="container">
-        <!-- Healthcare Project -->
+        <!-- Tourism Web Application -->
         <div class="row my-5">
             <div class="col">
                 <div class="position-relative mb-4">
                     <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                    <h5 class="font-weight-bold mb-1"><strong>Healthcare Management System</strong></h5>
-                    <p class="mb-2"><strong>• Technologies Used:</strong> .NET, C#, MSQL, .NET WFP</p>
-                    <p class="mb-2"><strong>• Responsibilities: </strong> Designed and implemented database schemas, and
-                        developed front-end interfaces, and back-end services. Played the role of the team leader to
-                        guide, and assist team members.</p>
-                    <p><strong>• Description:</strong> Developed a comprehensive Healthcare Management System to
-                        streamline various administrative and clinical operations. Key features include Electronic
-                        Medical Records (EMR) management, lab management, billing, appointment scheduling, patient
-                        registration, inventory management, and mobile application support. The system enhances the
-                        quality of patient care and operational efficiency through real-time information access and
-                        automated processes.</p>
+                    <h5 class="font-weight-bold mb-1"><strong>Tourism Full Stack Web Application</strong></h5>
+                    <p class="mb-2"><strong>Technologies Used:</strong> NextJS, NestJS, TypeScript, PostgreSQL</p>
+                    <p class="mb-2"><strong>Responsibilities:</strong> Developed RESTful APIs, integrated Gemini API,
+                        designed front-end, and managed PostgreSQL database.</p>
+                    <p><strong>Description:</strong> A tourism platform offering booking services, AI-aided tour
+                        recommendations, and a guide management system.</p>
+                    <a href="https://github.com/rakeshkarmaker/tourism-web-application-Backend-api" target="_blank"
+                        class="btn btn-primary btn-sm">Backend GitHub</a>
+                    <a href="https://github.com/rakeshkarmaker/tourism-web-application-Frontend" target="_blank"
+                        class="btn btn-primary btn-sm">Frontend GitHub</a>
+                    <a href="https://www.figma.com/design/8jNC9hxTPwpszJ6Ld2CRsB/Tour-Planner-Web-App-Design?node-id=2-5692&t=UPlY02pzr4oSQo8f-1"
+                        target="_blank" class="btn btn-primary btn-sm">UI Design</a>
                 </div>
             </div>
-
             <div class="col">
-                <img src="../img/healthcare-management-system.jpg" class="img-fluid border border-4 border-primary"
-                    alt="Image loading failed">
+                <!-- <img src="../img/tour-planner&guide-system.jpg" class="img-fluid border border-4 border-primary" alt="Image loading failed"> -->
+                <!-- V3.0.0 - Using the Ifame to display -->
+                <div class="monitor-container">
+                    <iframe src="https://ghurtejabe.netlify.app/" class="monitor-iframe"></iframe>
+                </div>
             </div>
         </div>
 
-
-        <!-- Tour Planner and Guidance Mobile App Project -->
+        <!-- Club Management Full Stack -->
         <div class="row my-5">
             <div class="col">
                 <div class="position-relative mb-4">
                     <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                    <h5 class="font-weight-bold mb-1"><strong>Tour Planner and Guidance Mobile App</strong></h5>
-                    <p class="mb-2"><strong>• Technologies Used:</strong> : Figma, Draw.io, Gira.</p>
-                    <p class="mb-2"><strong>• Responsibilities: </strong> Software Architecture Designer, Prototype
-                        designing.</p>
-                    <p><strong>• Description:</strong> Wrote the key features and concepts in a case study story.
-                        Developed Use Case Diagrams, Class Diagrams, Activity Diagrams, and Architecture Diagrams.
-                        Furthermore, by using Figma participated in a group to design a prototype mobile app UI of Tour
-                        Planner and Guidance Software.</p>
+                    <h5 class="font-weight-bold mb-1"><strong>DCS Club Alliance - Full Stack Web Application</strong>
+                    </h5>
+                    <p class="mb-2"><strong>Technologies Used:</strong> NextJS, NestJS, PostgreSQL, SOLID, Repository
+                        Pattern</p>
+                    <p class="mb-2"><strong>Responsibilities:</strong> Developed the front-end, designed the backend
+                        schema, and ensured secure API communication.</p>
+                    <p><strong>Description:</strong> A full-stack application for managing clubs, their activities, and
+                        members, ensuring modular and scalable architecture.</p>
+                    <a href="https://github.com/rakeshkarmaker/dcs-club-alliance-backend-api" target="_blank"
+                        class="btn btn-primary btn-sm">GitHub Link</a>
+                    <a href="https://drive.google.com/drive/folders/1OGEl8a8mfRilqk5-Vd2PkjWwuVX-w6iU?usp=sharing"
+                        target="_blank" class="btn btn-primary btn-sm">Documentation</a>
                 </div>
             </div>
-
             <div class="col">
-                <img src="../img/tour-planner&guide-system.jpg" class="img-fluid border border-4 border-primary"
-                    alt="Image loading failed">
+                <div class="monitor-container">
+                    <iframe src="http://dcscluballiance.org/" class="monitor-iframe"></iframe>
+                </div>
             </div>
         </div>
 
-
-        <!-- Hotel Management Systems Project -->
+        <!-- Event Management System -->
         <div class="row my-5">
             <div class="col">
                 <div class="position-relative mb-4">
                     <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                    <h5 class="font-weight-bold mb-1"><strong>Hotel Management System</strong></h5>
-                    <p class="mb-2"><strong>• Technologies Used:</strong> Java, JavaFX (GUI) .</p>
-                    <p class="mb-2"><strong>• Responsibilities: </strong> Software Arhictect, Backend programmer,
-                        partial UI design..</p>
-                    <p><strong>• Description:</strong> Wrote the full backend logic in Java for the project. The backend
-                        included data flow from various GUI frames without using the Database, total cost calculation,
-                        and change amount calculation. A check-in and checkout system was implemented by leveraging CSV
-                        file format with an error handling feature. Furthermore, contributed to GUI Frames UI designs..
-                    </p>
+                    <h5 class="font-weight-bold mb-1"><strong>Event Management System</strong></h5>
+                    <p class="mb-2"><strong>Technologies Used:</strong> NextJS, MongoDB, ReactBits, TypeScript</p>
+                    <p class="mb-2"><strong>Responsibilities:</strong> Developed full-stack application with NextJS,
+                        integrated MongoDB for data storage.</p>
+                    <p><strong>Description:</strong> A platform to manage events, with real-time data tracking and a
+                        responsive design built with modern frameworks.</p>
+                    <a href="https://github.com/rakeshkarmaker/event-management-next" target="_blank"
+                        class="btn btn-primary btn-sm">GitHub Link</a>
+                    <a href="https://dcsevent.vercel.app/" target="_blank" class="btn btn-primary btn-sm">Live Demo</a>
                 </div>
             </div>
-
             <div class="col">
-                <img src="../img/hotel-management-system.jpg" class="img-fluid border border-4 border-primary"
-                    alt="Image loading failed">
+                <div class="monitor-container">
+                    <iframe src="https://dcsevent.vercel.app/" class="monitor-iframe"></iframe>
+                </div>
             </div>
         </div>
+        
 
-
-
-
-
-        <!-- Farm Management System Project -->
+                <!-- Personal E-Portfolio Project -->
         <div class="row my-5">
             <div class="col">
                 <div class="position-relative mb-4">
                     <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                    <h5 class="font-weight-bold mb-1"><strong>Farm Management System </strong></h5>
-                    <p class="mb-2"><strong>• Technologies Used:</strong> MySQL, Oracle,DrawIO,SQL plus.</p>
-                    <p class="mb-2"><strong>• Responsibilities: </strong> Database Designer, Database quary, ER Diagram
-                        Drwaing, Normalization.</p>
-                    <p><strong>• Description:</strong> Created and managed databases for storing information on farmers,
-                        workers, products, production costs, sales, and profits. Performed queries on the designed
-                        database on Oracle..</p>
+                    <h5 class="font-weight-bold mb-1"><strong>Personal E-Portfolio</strong></h5>
+                    <p class="mb-2"><strong>Technologies Used:</strong> HTML5, CSS3, Bootstrap5, PHP, GitHub</p>
+                    <p class="mb-2"><strong>Responsibilities:</strong> Web developer, UI Designer, Backend Programmer.</p>
+                    <p><strong>Description:</strong> Developed a Personal E-Portfolio using HTML5, CSS3, and Bootstrap5 for my business communication course. Leveraged knowledge from various web development courses for a professional-looking personal website.</p>
+                    <a href="https://github.com/rakeshkarmaker/personal_e-portfolio" target="_blank" class="btn btn-primary btn-sm">GitHub Link</a>
                 </div>
             </div>
-
             <div class="col">
-                <img src="../img/farm-management-system.jpg" class="img-fluid border border-4 border-primary"
-                    alt="Image loading failed">
+                <img src="../img/personal_e-portfolio.jpg" class="img-fluid border border-4 border-primary" alt="Image loading failed">
             </div>
         </div>
 
-
-
-        <!-- Personal E- Portfolio Project -->
+        <!-- Book Borrowing System Project -->
         <div class="row my-5">
             <div class="col">
                 <div class="position-relative mb-4">
                     <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                    <h5 class="font-weight-bold mb-1"><strong> Personal E- Portfolio</strong></h5>
-                    <p class="mb-2"><strong>• Technologies Used:</strong> HTML5, CSS3, BOOTSTRAP5, PHP, github.</p>
-                    <p class="mb-2"><strong>• Responsibilities: </strong> : Web developer, UI Designer, Backend
-                        Programmer.</p>
-                    <p><strong>• Description:</strong> Developed a Personal E- Portfolio using HTML5, CSS3 and
-                        Bootstrap5 for my business communication course by leveraging the knowledge learnt from HTML5,
-                        CSS3 & Bootstrap 4 For Web Development course from Bohubrihi..</p>
+                    <h5 class="font-weight-bold mb-1"><strong>Book Borrowing System</strong></h5>
+                    <p class="mb-2"><strong>Technologies Used:</strong> HTML5, CSS3, Bootstrap5, PHP, GitHub</p>
+                    <p class="mb-2"><strong>Responsibilities:</strong> Web developer, UI Designer, Backend Programmer.</p>
+                    <p><strong>Description:</strong> Built a Book Borrowing System, leveraging the knowledge gained from a Web Technologies course. The system allows students to borrow books and track their borrowing history with an intuitive UI and secure backend integration.</p>
+                    <a href="https://github.com/rakeshkarmaker/book-borrow-system" target="_blank" class="btn btn-primary btn-sm">GitHub Link</a>
                 </div>
             </div>
-
             <div class="col">
-                <img src="../img/personal_e-portfolio.jpg" class="img-fluid border border-4 border-primary"
-                    alt="Image loading failed">
+                <img src="../img/book-borrow-system.jpg" class="img-fluid border border-4 border-primary" alt="Image loading failed">
             </div>
         </div>
 
-
-
-        <!-- Library Management System Project -->
+        <!-- EcoCharge Hub – EV Station Management Platform -->
         <div class="row my-5">
             <div class="col">
                 <div class="position-relative mb-4">
                     <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                    <h5 class="font-weight-bold mb-1"><strong> Book Borrowing system</strong></h5>
-                    <p class="mb-2"><strong>• Technologies Used:</strong> HTML5, CSS3, BOOTSTRAP5, PHP, github.</p>
-                    <p class="mb-2"><strong>• Responsibilities: </strong> : Web developer, UI Designer, Backend
-                        Programmer.</p>
-                    <p><strong>• Description:</strong> Building a Book Borrowing system on by leveraging the knowledge
-                        learnt from Academic course named Web Technologies offered by AIUB.</p>
+                    <h5 class="font-weight-bold mb-1"><strong>EcoCharge Hub – EV Station Management Platform</strong></h5>
+                    <p class="mb-2"><strong>Technologies Used:</strong> PHP, MVC, MySQL, HTML, CSS, JavaScript</p>
+                    <p class="mb-2"><strong>Responsibilities:</strong> Backend Developer, Database Design, Frontend Support.</p>
+                    <p><strong>Description:</strong> Developed a web-based platform for managing Electric Vehicle (EV) charging stations. The platform enables station owners to track usage, payments, and vehicle details using a robust backend and user-friendly frontend.</p>
+                    <a href="https://github.com/rakeshkarmaker/Web-Technology-Project-ecocharge_hub" target="_blank" class="btn btn-primary btn-sm">GitHub Link</a>
+                    <a href="https://ecocharge.free.nf/" target="_blank" class="btn btn-primary btn-sm">Live Demo</a>
                 </div>
             </div>
-
             <div class="col">
-                <img src="../img/book-borrow-system.jpg" class="img-fluid border border-4 border-primary"
-                    alt="Image loading failed">
+                <iframe src="https://ecocharge.free.nf/" class="monitor-iframe"></iframe>
             </div>
         </div>
 
+        <!-- Exam Management System -->
+        <div class="row my-5">
+            <div class="col">
+                <div class="position-relative mb-4">
+                    <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                    <h5 class="font-weight-bold mb-1"><strong>Exam Management System Backend</strong></h5>
+                    <p class="mb-2"><strong>Technologies Used:</strong> ASP.NET Web API, 3-Tier Architecture, SOLID, Repository Pattern</p>
+                    <p class="mb-2"><strong>Responsibilities:</strong> Backend Developer, API Integration, Data Structure Design.</p>
+                    <p><strong>Description:</strong> Implemented a robust exam management system backend that uses RESTful APIs to manage exam records, student information, and performance reports. The backend follows SOLID principles and uses Entity Framework with a Code First approach.</p>
+                    <a href="https://github.com/rakeshkarmaker/Exam-Management-Backend-API-.NET" target="_blank" class="btn btn-primary btn-sm">GitHub Link</a>
+                </div>
+            </div>
+            <div class="col">
+                <!-- <img src="../img/exam-management-system.jpg" class="img-fluid border border-4 border-primary" alt="Image loading failed"> -->
+            </div>
+        </div>
 
+        <!-- Farm Management System -->
+        <div class="row my-5">
+            <div class="col">
+                <div class="position-relative mb-4">
+                    <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                    <h5 class="font-weight-bold mb-1"><strong>Farm Management System</strong></h5>
+                    <p class="mb-2"><strong>Technologies Used:</strong> MySQL, Oracle, Draw.IO, SQL Plus</p>
+                    <p class="mb-2"><strong>Responsibilities:</strong> Database Design, Query Management, ER Diagram Creation.</p>
+                    <p><strong>Description:</strong> Designed a database for farm management, including information on farmers, workers, products, sales, and profits. Managed complex queries and ER diagrams to improve data management for farm operators.</p>
+                    <a href="https://drive.google.com/file/d/1V8m9fTC6i6YLLeXR3SxAc74vNeQUCFGP/view?usp=sharing" target="_blank" class="btn btn-primary btn-sm">Documentation</a>
+                </div>
+            </div>
+            <div class="col">
+                <img src="../img/farm-management-system.jpg" class="img-fluid border border-4 border-primary" alt="Image loading failed">
+            </div>
+        </div>
 
+        <!-- Hospital Management System -->
+        <div class="row my-5">
+            <div class="col">
+                <div class="position-relative mb-4">
+                    <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                    <h5 class="font-weight-bold mb-1"><strong>Hospital Management System</strong></h5>
+                    <p class="mb-2"><strong>Technologies Used:</strong> C#, Win Forms, .NET Framework, MVC, Microsoft SQL</p>
+                    <p class="mb-2"><strong>Responsibilities:</strong> Windows App Developer, Database Integration, UI Design.</p>
+                    <p><strong>Description:</strong> Developed a comprehensive hospital management system using C# and WinForms. Implemented features like patient registration, appointment scheduling, and a fully functional dashboard for medical staff.</p>
+                    <a href="https://github.com/rakeshkarmaker/HMS-A-redefined-Healthcare-Mangement-System/" target="_blank" class="btn btn-primary btn-sm">GitHub Link</a>
+                </div>
+            </div>
+            <div class="col">
+                <img src="../img/hospital-management-system.jpg" class="img-fluid border border-4 border-primary" alt="Image loading failed">
+            </div>
+        </div>
 
-
+        <!-- More Projects ... -->
+        <!-- Repeat the format for each project -->
     </div>
 
     <!-- Footer Start -->
@@ -264,8 +312,6 @@
         </div>
     </div>
     <!-- Footer End -->
-
-
 
 </body>
 
